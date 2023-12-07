@@ -1,12 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-py3dns
-Version:	3.2.1
-Release:	2
+Version:	4.0.0
+Release:	1
 Summary:	Python 3 DNS library
-License:	Python License
+License:	CNRI Python License
 URL:		https://launchpad.net/py3dns
-Source0:	https://mirrors.nju.edu.cn/pypi/web/packages/8a/b7/bd0fca1b330527ccf5f47a586900797dd1e054909f7d4c5e287de8b3fe59/py3dns-3.2.1.tar.gz
-Patch0:         python3-py3dns-handle-absent-resolv.patch
+Source0:	https://files.pythonhosted.org/packages/ce/46/5fe65e2d914ae7c46cae498269166c36adfd90624574bab12a05927ee0ec/py3dns-4.0.0.tar.gz
 BuildArch:	noarch
 
 
@@ -69,6 +68,10 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Thu Dec 7 2023 lichaoran <pkwarcraft@hotmail.com> - 4.0.0-1
+- switch to SPDX license style
+- upgrade to latest version 4.0.0
+
 * Wed Mar 29 2023 lichaoran <pkwarcraft@hotmail.com> - 3.2.1-2
 - add patch to handle missing of resolv.conf
 
